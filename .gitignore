@@ -1,0 +1,9 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.ruby-version
+*.sh
+.DS_Store
+_config-dev.yml

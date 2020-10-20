@@ -1,0 +1,46 @@
+# Site settings
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+markdown:           kramdown
+permalink:          pretty
+
+title: sirM1sterTV
+email: thesir@sirm1ster.tv
+description: >- # this means to ignore newlines until "baseurl:"
+  A Dutch Twtich Affiliate part-time streamer who's main concern is to play games in style and creating a warm and welcoming, inclusive community
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sirm1ster.tv" # the base hostname & protocol for your site, e.g. http://example.com
+
+author: sirM1ster
+twitch_username: sirm1stertv
+twitter_username: sirm1stertv
+github_username:  mistermark
+youtube_id: UCX2ZZR8I9g5ziJf5W_DOROA
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+google_analytics: UA-180639508-1
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

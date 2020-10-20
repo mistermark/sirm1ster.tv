@@ -1,0 +1,62 @@
+$drop-shadow-color: #143148;
+$text-shadow-stack-4: 1px 1px 0 $drop-shadow-color,
+  2px 2px 0 $drop-shadow-color,
+  3px 3px 0 $drop-shadow-color,
+  4px 4px 0 $drop-shadow-color,
+  5px 5px 0 $drop-shadow-color,
+  6px 6px 0 $drop-shadow-color,
+  7px 7px 0 $drop-shadow-color,
+  8px 8px 0 $drop-shadow-color;
+$drop-shadow-stack-4: drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color);
+
+.hero-logo img {
+  -webkit-filter: $drop-shadow-stack-4;
+  filter: $drop-shadow-stack-4;
+  max-height: 42vh;
+}
+
+.hero-heading {
+  @include relative-font-size(5);
+  text-shadow: $text-shadow-stack-4;
+}
+
+.profile-links {
+  width: 26rem;
+  ul,li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a {
+    border-radius: 0.5rem;
+    display: inline-block;
+    width: 8rem;
+    height: 4rem;
+    background-color: rgba(255,255,255,0.6);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(255,255,255,0.8);
+      box-shadow: 0 0 12px rgba(255,255,255,0.8),
+      1px 1px 0 rgba(255,255,255,0.8), 1px -1px 0 rgba(255,255,255,0.8), -1px -1px 0 rgba(255,255,255,0.8), -1px 1px 0 rgba(255,255,255,0.8),
+      inset 0 0 4px rgba(255,255,255,0.8);
+    }
+  }
+}

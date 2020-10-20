@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="80px" viewBox="0 0 113 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>YouTube</title>
+    <defs>
+        <polygon id="path-1" points="0.0384 0.0256 112.64 0.0256 112.64 79.36 0.0384 79.36"></polygon>
+    </defs>
+    <g id="icons-/-social-/-youtube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="yt_icon_rgb" transform="translate(-0.000000, 0.000000)">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M110.28608,12.39232 C108.99072,7.51424 105.1744,3.67296 100.32768,2.36928 C91.54368,0 56.32,0 56.32,0 C56.32,0 21.09632,0 12.31232,2.36928 C7.46624,3.67296 3.64928,7.51424 2.35392,12.39232 C0,21.23328 0,39.68 0,39.68 C0,39.68 0,58.12608 2.35392,66.96832 C3.64928,71.84576 7.46624,75.68704 12.31232,76.99136 C21.09632,79.36 56.32,79.36 56.32,79.36 C56.32,79.36 91.54368,79.36 100.32768,76.99136 C105.1744,75.68704 108.99072,71.84576 110.28608,66.96832 C112.64,58.12608 112.64,39.68 112.64,39.68 C112.64,39.68 112.64,21.23328 110.28608,12.39232" id="Fill-1" fill="#D9252A" mask="url(#mask-2)"></path>
+            </g>
+            <polyline id="Fill-4" fill="#FFFFFE" points="44.8 56.42816 74.24 39.68064 44.8 22.93184 44.8 56.42816"></polyline>
+        </g>
+    </g>
+</svg>
