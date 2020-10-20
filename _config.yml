@@ -36,6 +36,7 @@ plugins:
   - jekyll-seo-tag
 
 google_analytics: UA-180639508-1
+google_tagmanager: GTM-WGZD9XV
 
 # Exclude from processing.
 # The following items will not be processed, by default.
