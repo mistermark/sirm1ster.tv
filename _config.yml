@@ -37,6 +37,7 @@ plugins:
 
 google_analytics: UA-180639508-1
 google_tagmanager: GTM-WGZD9XV
+google_tgm_trackingParam: tgm_sirm1s
 
 # Exclude from processing.
 # The following items will not be processed, by default.
