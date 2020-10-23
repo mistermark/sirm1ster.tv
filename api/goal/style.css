@@ -1,0 +1,62 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Calamity", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+.frame {
+  box-sizing: border-box;
+  width: 100%; /*824px*/
+  height: 100%; /*84px*/
+  /* padding: 8px 16px 0 8px; */
+  background: transparent url("images/progress-bar.png") no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+.progress-bar {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  bottom: 16px;
+  left: 8px;
+  overflow: hidden;
+}
+.progress {
+  background-color: #327BCA;
+  width: 0;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.text-wrapper {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+.text-label {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  line-height: 60px;
+  padding: 0 16px;
+
+}
+.text-label {
+  z-index: 0;
+  color: #202020;
+}
+.text-label-top {
+  z-index: 2;
+  color: #fff;
+}
+.progress-unit {
+  text-transform: capitalize;
+}
