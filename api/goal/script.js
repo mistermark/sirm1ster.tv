@@ -1,4 +1,3 @@
-// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
 let urlParams;
 (function () {
   var match,
@@ -18,6 +17,7 @@ const elProgress = document.getElementsByClassName("progress-positive");
 const elTotal = document.getElementsByClassName("progress-total");
 const elUnits = document.getElementsByClassName("progress-unit");
 const elFill = document.getElementById("progress-fill");
+
 const totalNum = urlParams["total"];
 const progressNum = urlParams["progress"];
 const unitLabel = urlParams["unit"];
