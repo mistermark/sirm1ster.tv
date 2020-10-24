@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   width: 100vw;
   height: 100vh;
@@ -8,34 +11,46 @@ html, body {
   font-size: 32px;
 }
 .frame {
-  box-sizing: border-box;
-  width: 100%; /*824px*/
-  height: 100%; /*84px*/
-  /* padding: 8px 16px 0 8px; */
-  background: transparent url("images/progress-bar.png") no-repeat center;
-  background-size: contain;
+  width: calc(100vw - 8px); /*824px*/
+  height: calc(100vh - 8px); /*84px*/
+  padding: 8px;
+  background: #202020;
+  box-shadow: 1px 1px 0 #202020, 2px 2px 0 #202020, 3px 3px 0 #202020, 4px 4px 0 #202020, 5px 5px 0 #202020, 6px 6px 0 #202020, 7px 7px 0 #202020, 8px 8px 0 #202020;
+}
+.frame-border {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 8px;
   position: relative;
 }
+
 .progress-bar {
   position: absolute;
   top: 8px;
-  right: 16px;
-  bottom: 16px;
+  right: 8px;
+  bottom: 8px;
   left: 8px;
   overflow: hidden;
+  box-shadow: inset 4px 4px 0 #6E7A7E;
+}
+.progress-bar-low {
+  background-color: #DDF5FE;
 }
 .progress {
   background-color: #327BCA;
   width: 0;
-  height: 60px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   overflow: hidden;
+
 }
 .text-wrapper {
-  width: 800px;
+  width: calc(100vw - 40px);
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -44,8 +59,7 @@ html, body {
 .text-label {
   position: relative;
   display: flex;
-  align-items: baseline;
-  line-height: 60px;
+  align-items: center;
   padding: 0 16px;
 
 }

@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Progress Bar</title>
-    <link rel="stylesheet" href="style.css">
+---
+title: "sirM1ster API: Progress Bar"
+layout: default-blank
+---
 
-  </head>
+<div class="frame">
+  <div class="frame-border">
 
-  <body translate="no">
-    <div class="frame">
-      <div class="progress-bar">
-        <div class="progress" id="progress-fill" style="width:36px;">
-          <div class="text-wrapper">
-            <div class="text-label text-label-top progress-positive" id="progress-positive">0</div>
-            <div class="text-label text-label-top progress-unit"></div>
-            <div class="text-label text-label-top progress-total" id="progress-total">0</div>
-          </div>
-        </div>
-
-      </div>
-      <div class="progress-bar">
+    <div class="progress-bar">
+      <div class="progress" id="progress-fill" style="width:36px;">
         <div class="text-wrapper">
-          <div class="text-label progress-positive progress-positive-low" id="progress-positive-low">0</div>
-          <div class="text-label progress-unit"></div>
-          <div class="text-label progress-total progress-total-low" id="progress-total-low">0</div>
+          <div class="text-label text-label-top progress-positive" id="progress-positive">0</div>
+          <div class="text-label text-label-top progress-unit"></div>
+          <div class="text-label text-label-top progress-total" id="progress-total">0</div>
         </div>
+      </div>
+
+    </div>
+    <div class="progress-bar progress-bar-low">
+      <div class="text-wrapper">
+        <div class="text-label progress-positive progress-positive-low" id="progress-positive-low">0</div>
+        <div class="text-label progress-unit"></div>
+        <div class="text-label progress-total progress-total-low" id="progress-total-low">0</div>
       </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+  </div>
+</div>
+
+<script src="script.js"></script>
