@@ -24,7 +24,7 @@ if (timezone) {
   if (timezone === "MST") timeOffset = "-0700";
   if (timezone === "CST") timeOffset = "-0600";
   if (timezone === "EST") timeOffset = "-0500";
-  if (timezone === "GMT") timeOffset = "+0000";
+  if (timezone === "GMT") timeOffset = "-0000";
   if (timezone === "CET") timeOffset = "+0100";
   if (timezone === "EET") timeOffset = "+0300";
   if (timezone === "KST") timeOffset = "+0900";
