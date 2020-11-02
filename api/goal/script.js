@@ -24,16 +24,6 @@ const unitLabel = urlParams["unit"];
 
 const barMaxWidth = 100; //Percent
 
-const appendStylesOverride = () => {
-
-  const fontsizeOverride = urlParams["font-size"];
-  const inlineStyles = `body { font-size: ${fontsizeOverride}px; }`;
-  const head = document.head;
-  const style = document.createElement('style');
-  style.appendChild(document.createTextNode(inlineStyles));
-  head.appendChild(style);
-}
-
 let setBarWidth = (maxWidth) => {
   const progressWidth = maxWidth / totalNum * progressNum;
   elFill.style.width = `${progressWidth}%`;
@@ -49,5 +39,3 @@ setLabelText(elTotal, totalNum);
 setLabelText(elProgress, progressNum);
 setLabelText(elUnits, unitLabel);
 setBarWidth(barMaxWidth);
-
-if (urlParams["font-size"]) appendStylesOverride();
