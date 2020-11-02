@@ -155,8 +155,8 @@
           throw `${response.status}: ${response.statusText}`;
         }
         response.json().then(data => {
-          // donations = donations.concat(data.data);
-          donations = donations.concat(mockDonations.data);
+          donations = donations.concat(data.data);
+          // donations = donations.concat(mockDonations.data);
 
           donations = _sortJSON(donations, 'amount');
 
