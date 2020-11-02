@@ -93,13 +93,14 @@ ul, ol, li {
 
 /* Top Donations */
 
-.top-donations .frame-border {
-  background-color: #000;
+.top-donations {
+  color: #fff;
 }
 #title {
-  margin: 0;
+  margin: 0 0 0.4rem 0;
   font-size: 1.4rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  box-shadow: 0 1px 0 #fff;
 }
 .top-donations ol {
   list-style: decimal inside;
@@ -109,8 +110,6 @@ ul, ol, li {
   width: 100%;
 }
 .top-donations li {
-  color: #000;
-  box-shadow: 0 1px 0 #000;
   line-height: 36px;
   display: flex;
   justify-content: space-between;
