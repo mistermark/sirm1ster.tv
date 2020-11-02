@@ -20,6 +20,7 @@
   const TILTIFY_USERID = urlParams['user'];
   const TILTIFY_TEAMID = urlParams['team'];
   const TILTIFY_CAMPAIGNID = urlParams['campaign'];
+  const LIST_TITLE = urlParams['title'];
 
   const TILTIFY_API = {
     base: 'https://tiltify.com',
@@ -96,6 +97,7 @@
   // STORE
 
   const donationsListOutput = document.getElementById('donations-list');
+  const donationsTitle = document.getElementById('title');
 
   // METHODS
 
@@ -176,6 +178,9 @@
 
 
   // Let the magic happen...
+
+  if(LIST_TITLE)
+    donationsTitle.innerText = LIST_TITLE;
 
   getCampaignDonations(progressCallback)
       .then(donations => {
