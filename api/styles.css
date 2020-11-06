@@ -46,7 +46,7 @@ ul, ol, li {
   overflow: hidden;
 }
 
-.goal-progress .frame {
+.goal-progress.frame {
   width: calc(100vw - 4px); /*824px*/
   height: calc(100vh - 4px); /*84px*/
   padding: 4px;
