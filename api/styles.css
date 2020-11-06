@@ -20,48 +20,60 @@ ul, ol, li {
 
 
 .frame {
-  width: calc(100vw - 4px); /*824px*/
-  height: calc(100vh - 4px); /*84px*/
-  padding: 4px;
+  padding: 2px;
   background: #000000;
   box-shadow:
     1px 1px 0 #202020,
     2px 2px 0 #202020,
     3px 3px 0 #202020,
-    4px 4px 0 #202020;
+    4px 4px 0 #202020,
+    4px 4px 4px rgba(0,0,0,0.8);
+  margin-right: 4px;
 }
 .frame-border {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  padding: 4px;
-  position: relative;
+  padding: 2px;
+  display: flex;
 }
 
 /* Progress Bar */
 
-.progress-bar {
+.progress-fill {
+  background-color: #327BCA;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.goal-progress .frame {
+  width: calc(100vw - 4px); /*824px*/
+  height: calc(100vh - 4px); /*84px*/
+  padding: 4px;
+  margin-right: 0;
+}
+.goal-progress .progress-bar {
   position: absolute;
   top: 4px;
   right: 4px;
   bottom: 4px;
   left: 4px;
-  overflow: hidden;
   box-shadow: inset 4px 4px 0 #6E7A7E;
+  overflow: hidden;
+}
+.goal-progress .frame-border {
+  padding: 4px;
+  position: relative;
 }
 .progress-bar-low {
   background-color: #DDF5FE;
 }
-.progress {
-  background-color: #327BCA;
+.goal-progress .progress-fill {
   width: 0;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  overflow: hidden;
-
 }
 .text-wrapper {
   width: calc(100vw - 40px);
@@ -122,4 +134,80 @@ ul, ol, li {
   display: flex;
   align-items: stretch;
   height: 100%;
+}
+
+/* Milestones */
+.milestones {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.milestones .frame {
+  margin: 7px 4px 9px 0;
+  flex: 0;
+}
+
+.milestones .progress-bar {
+  width: 2rem;
+  position: relative;
+}
+.milestones .progress-bg,
+.milestones .progress-fill {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+.milestones .progress-bg {
+  z-index: 1;
+}
+.milestones .progress-fill {
+  z-index: 2;
+}
+.milestones .progress-sections {
+  display: grid;
+  grid-template-rows: 25% 25% 12.5% 12.5% 12.5% 7.5% 1fr;
+  height: 100%;
+  width: 100%;
+}
+.milestones .progress-bg .progress-part {
+  box-shadow: inset 0 2px 0 #000;
+}
+.milestones .progress-fill .progress-part {
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.75);
+}
+.milestones .progress-part:first-child {
+  box-shadow: none;
+}
+.milestones .progress-fill .progress-sections {
+  position: relative;
+  z-index: 4;
+}
+.milestones .progress-fill-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: #327BCA;
+  z-index: 3;
+}
+.milestones .labels {
+  display: grid;
+  grid-template-rows: 5% 22% 24% 12.5% 12% 12% 7.5% 1fr;
+  padding-left: 4px;
+  font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  flex: 1;
+}
+.milestones .label {
+  display: flex;
+  align-items: flex-end;
+}
+.milestones .amount {
+  width: 3rem;
+}
+.milestones .label:first-child {
+  align-items: flex-start;
 }
