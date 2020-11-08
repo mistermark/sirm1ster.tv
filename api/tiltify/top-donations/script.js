@@ -186,7 +186,7 @@
       .then(donations => {
         const donationsList = document.createElement('ol');
 
-        const topDonations = donations.slice(0, 5);
+        const topDonations = donations.slice(Math.max(donations.length - 5, 0));
 
         for (let i = 0; i < topDonations.length; i++) {
           const donationItem = document.createElement('li');
@@ -198,16 +198,5 @@
         donationsListOutput.appendChild(donationsList);
       })
       .catch(console.error);
-
-  // getCampaignDonations().then((donations) => {
-  //   console.log(donations);
-  //   listDonations.push(donations);
-  //   return donations;
-  // })
-  // .then((donations) => {
-  //   if(donations.links.next) {
-  //     console.log(listDonations);
-  //   }
-  // })
 
 }());
