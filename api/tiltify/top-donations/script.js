@@ -21,6 +21,7 @@
   const TILTIFY_TEAMID = urlParams['team'];
   const TILTIFY_CAMPAIGNID = urlParams['campaign'];
   const LIST_TITLE = urlParams['title'];
+  const LIST_TOP = urlParams['top'] || 5;
 
   const TILTIFY_API = {
     base: 'https://tiltify.com',
@@ -28,69 +29,6 @@
   const API_OPTIONS = {
     'headers': {
       'Authorization': `Bearer ${TILTIFY_TOKEN}`
-    }
-  };
-
-  const mockDonations = {
-    "meta": {
-      "status": 200
-    },
-    "data": [
-      {
-        "id": 21347,
-        "amount": 8.00,
-        "name": "Yoda",
-        "comment": "Judge me by my size, do you?",
-        "completedAt": 1490328000000,
-        "rewardId": 12
-      },
-      {
-        "id": 21342,
-        "amount": 5.00,
-        "name": "Luke",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-      {
-        "id": 21342,
-        "amount": 25.00,
-        "name": "John",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-      {
-        "id": 21342,
-        "amount": 100.00,
-        "name": "Darth Vader",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-      {
-        "id": 21342,
-        "amount": 12.00,
-        "name": "Obi Wan",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-      {
-        "id": 21342,
-        "amount": 0.50,
-        "name": "Palpatine",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-      {
-        "id": 21342,
-        "amount": 35.00,
-        "name": "Leia",
-        "comment": "This is an easy Game",
-        "completedAt": 1490327800000
-      },
-    ],
-    "links": {
-      "prev": "",
-      "next": "",
-      "self": ""
     }
   };
 
@@ -186,7 +124,7 @@
       .then(donations => {
         const donationsList = document.createElement('ol');
 
-        const topDonations = donations.slice(Math.max(donations.length - 5, 0));
+        const topDonations = donations.slice(Math.max(donations.length - LIST_TOP, 0));
 
         for (let i = 0; i < topDonations.length; i++) {
           const donationItem = document.createElement('li');
