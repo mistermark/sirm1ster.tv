@@ -8,89 +8,39 @@ layout: page
   <div class="schedule">
     <div class="schedule-header">
       <h1>sirM1ster Schedule</h1>
-      <span>14/12 - 20/12</span>
+      <span>{{ site.data.schedule.daterange.first }} - {{ site.data.schedule.daterange.last }}</span>
     </div>
     <div class="schedule-roster">
-      <div class="roster-day no-stream">
-        <div class="day-name">
-          <span>Monday</span>
+      {% for days in site.data.schedule.days %}
+        {% if days.streaming == true %}
+        <div class="roster-day">
+          <div class="day-name">
+            <span>{{ days.day }}</span>
+          </div>
+          <div class="day-times">
+            <span>{{ days.times.start }} - {{ days.times.end }}</span>
+          </div>
+          <div class="day-content">
+            <img src="/assets/images/thumbnails/game/{{ days.content }}.png" srcset="/assets/images/thumbnails/game/{{ days.content }}@2x.png 2x">
+          </div>
         </div>
-        <div class="day-times">
-          <span>No stream</span>
+        {% else %}
+        <div class="roster-day no-stream">
+          <div class="day-name">
+            <span>{{ days.day }}</span>
+          </div>
+          <div class="day-times">
+            <span>No stream</span>
+          </div>
+          <div class="day-content">
+            <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
+          </div>
         </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day no-stream">
-        <div class="day-name">
-          <span>Tuesday</span>
-        </div>
-        <div class="day-times">
-          <span>No stream</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day no-stream">
-        <div class="day-name">
-          <span>Wednesday</span>
-        </div>
-        <div class="day-times">
-          <span>No stream</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day no-stream">
-        <div class="day-name">
-          <span>Thursday</span>
-        </div>
-        <div class="day-times">
-          <span>No stream</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day">
-        <div class="day-name">
-          <span>Friday</span>
-        </div>
-        <div class="day-times">
-          <span>9:30 PM - 1:30 AM</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/botw.png" srcset="/assets/images/thumbnails/game/botw@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day">
-        <div class="day-name">
-          <span>Saturday</span>
-        </div>
-        <div class="day-times">
-          <span>9:30 PM - 1:30 AM</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/botw.png" srcset="/assets/images/thumbnails/game/botw@2x.png 2x">
-        </div>
-      </div>
-      <div class="roster-day no-stream">
-        <div class="day-name">
-          <span>Sunday</span>
-        </div>
-        <div class="day-times">
-          <span>No stream</span>
-        </div>
-        <div class="day-content">
-          <img src="/assets/images/thumbnails/game/no-stream.png" srcset="/assets/images/thumbnails/game/no-stream@2x.png 2x">
-        </div>
-      </div>
+        {% endif %}
+      {% endfor %}
     </div>
     <div class="footnote">
-      <span>All times above are in CET (Central European Time)</span>
+      <span>{{ site.data.schedule.footnote }}</span>
     </div>
   </div>
 

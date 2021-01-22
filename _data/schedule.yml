@@ -1,0 +1,47 @@
+footnote: "All times above are in CET (Central European Time)"
+daterange:
+  first: 14/12
+  last: 20/12
+days:
+  - day: Monday
+    streaming: false
+    times:
+      start: ""
+      end: ""
+    content: "no-stream"
+  - day: Tuesday
+    streaming: false
+    times:
+      start: ""
+      end: ""
+    content: "no-stream"
+  - day: Wednesday
+    streaming: false
+    times:
+      start: ""
+      end: ""
+    content: "no-stream"
+  - day: Thursday
+    streaming: false
+    times:
+      start: ""
+      end: ""
+    content: "no-stream"
+  - day: Friday
+    streaming: true
+    times:
+      start: "9:30 PM"
+      end: "1:30 AM"
+    content: "botw"
+  - day: Saturday
+    streaming: true
+    times:
+      start: "9:30 PM"
+      end: "1:30 AM"
+    content: "botw"
+  - day: Sunday
+    streaming: false
+    times:
+      start: ""
+      end: ""
+    content: "no-stream"
