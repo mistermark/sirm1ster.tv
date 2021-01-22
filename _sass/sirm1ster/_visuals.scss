@@ -2,12 +2,23 @@ $drop-shadow-color: #202020;
 $text-shadow-stack-4: 1px 1px 0 $drop-shadow-color,
   2px 2px 0 $drop-shadow-color,
   3px 3px 0 $drop-shadow-color,
+  4px 4px 0 $drop-shadow-color;
+
+$text-shadow-stack-8: 1px 1px 0 $drop-shadow-color,
+  2px 2px 0 $drop-shadow-color,
+  3px 3px 0 $drop-shadow-color,
   4px 4px 0 $drop-shadow-color,
   5px 5px 0 $drop-shadow-color,
   6px 6px 0 $drop-shadow-color,
   7px 7px 0 $drop-shadow-color,
   8px 8px 0 $drop-shadow-color;
+
 $drop-shadow-stack-4: drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color)
+  drop-shadow(1px 1px 0 $drop-shadow-color);
+
+$drop-shadow-stack-8: drop-shadow(1px 1px 0 $drop-shadow-color)
   drop-shadow(1px 1px 0 $drop-shadow-color)
   drop-shadow(1px 1px 0 $drop-shadow-color)
   drop-shadow(1px 1px 0 $drop-shadow-color)
@@ -17,14 +28,14 @@ $drop-shadow-stack-4: drop-shadow(1px 1px 0 $drop-shadow-color)
   drop-shadow(1px 1px 0 $drop-shadow-color);
 
 .hero-logo img {
-  -webkit-filter: $drop-shadow-stack-4;
-  filter: $drop-shadow-stack-4;
+  -webkit-filter: $drop-shadow-stack-8;
+  filter: $drop-shadow-stack-8;
   max-height: 42vh;
 }
 
 .hero-heading {
   @include relative-font-size(5);
-  text-shadow: $text-shadow-stack-4;
+  text-shadow: $text-shadow-stack-8;
 }
 
 .profile-links {
@@ -58,5 +69,77 @@ $drop-shadow-stack-4: drop-shadow(1px 1px 0 $drop-shadow-color)
       1px 1px 0 rgba(255,255,255,0.8), 1px -1px 0 rgba(255,255,255,0.8), -1px -1px 0 rgba(255,255,255,0.8), -1px 1px 0 rgba(255,255,255,0.8),
       inset 0 0 4px rgba(255,255,255,0.8);
     }
+  }
+}
+
+.schedule-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schedule {
+  width: 60%;
+
+  .schedule-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    h1 {
+      text-shadow: $text-shadow-stack-4;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+  }
+  .footnote {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+  }
+  .roster-day {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    color: #202020;
+    background-color: #fff;
+    border: 8px solid #202020;
+    // height: 64px;
+    margin-bottom: 8px;
+    padding-left: 1rem;
+    -webkit-filter: $drop-shadow-stack-4;
+    filter: $drop-shadow-stack-4;
+  }
+  .day-name,
+  .day-times {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .day-name {
+    font-size: 32px;
+    font-family: "Overpass Black", $base-font-family;
+  }
+  .no-stream .day-name {
+    font-size: 24px;
+  }
+  .day-times {
+    font-size: 24px;
+    font-family: "Overpass ExtraBold", $base-font-family;
+  }
+  .no-stream .day-times {
+    font-size: 20px;
+  }
+  .day-content {
+    padding: 1px;
+    img {
+      height: 62px;
+    }
+  }
+  .no-stream .day-content img {
+    height: 36px;
   }
 }
