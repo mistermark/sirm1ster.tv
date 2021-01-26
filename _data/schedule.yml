@@ -1,43 +1,43 @@
 footnote: "All times above are in CET (Central European Time)"
 daterange:
-  first: 14/12
-  last: 20/12
+  first: 24/01
+  last: 30/01
 days:
   - day: Monday
-    streaming: false
+    streaming: true
     times:
-      start: ""
-      end: ""
-    content: "no-stream"
+      start: "10:30 AM"
+      end: "4:00 PM"
+    content: "asmr-botw"
   - day: Tuesday
-    streaming: false
+    streaming: true
     times:
-      start: ""
-      end: ""
-    content: "no-stream"
+      start: "10:30 AM"
+      end: "4:00 PM"
+    content: "asmr-botw"
   - day: Wednesday
-    streaming: false
+    streaming: true
     times:
-      start: ""
-      end: ""
-    content: "no-stream"
+      start: "10:30 AM"
+      end: "4:00 PM"
+    content: "asmr-botw"
   - day: Thursday
-    streaming: false
+    streaming: true
     times:
-      start: ""
-      end: ""
-    content: "no-stream"
+      start: "10:30 AM"
+      end: "4:00 PM"
+    content: "asmr-botw"
   - day: Friday
     streaming: true
     times:
       start: "9:30 PM"
-      end: "1:30 AM"
+      end: "1:00 AM"
     content: "botw"
   - day: Saturday
     streaming: true
     times:
       start: "9:30 PM"
-      end: "1:30 AM"
+      end: "1:00 AM"
     content: "botw"
   - day: Sunday
     streaming: false
