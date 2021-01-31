@@ -1,7 +1,7 @@
 footnote: "All times above are in CET (Central European Time)"
 daterange:
-  first: 24/01
-  last: 30/01
+  first: 31/01
+  last: 6/02
 days:
   - day: Monday
     streaming: true
@@ -32,13 +32,13 @@ days:
     times:
       start: "9:30 PM"
       end: "1:00 AM"
-    content: "botw"
+    content: "smashbros"
   - day: Saturday
     streaming: true
     times:
       start: "9:30 PM"
       end: "1:00 AM"
-    content: "botw"
+    content: "smashbros"
   - day: Sunday
     streaming: false
     times:
