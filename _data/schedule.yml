@@ -6,39 +6,39 @@ days:
   - day: Monday
     streaming: true
     times:
-      start: "10:30 AM"
+      start: "9:30 AM"
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Tuesday
     streaming: true
     times:
-      start: "10:30 AM"
+      start: "9:30 AM"
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Wednesday
     streaming: true
     times:
-      start: "10:30 AM"
+      start: "9:30 AM"
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Thursday
     streaming: true
     times:
-      start: "10:30 AM"
+      start: "9:30 AM"
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Friday
-    streaming: false
+    streaming: true
     times:
-      start: "9:30 PM"
-      end: "1:00 AM"
-    content: "smashbros"
+      start: "9:30 AM"
+      end: "4:00 PM"
+    content: "asmr-botw"
   - day: Saturday
     streaming: true
     times:
       start: "9:30 PM"
       end: "1:00 AM"
-    content: "lego-75254"
+    content: "smash-bros"
   - day: Sunday
     streaming: false
     times:
