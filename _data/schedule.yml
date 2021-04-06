@@ -1,10 +1,10 @@
 footnote: "All times above are in CET (Central European Time)"
 daterange:
-  first: 08/03
-  last: 14/03
+  first: 05/04
+  last: 11/04
 days:
   - day: Monday
-    streaming: true
+    streaming: false
     times:
       start: "9:30 AM"
       end: "4:00 PM"
