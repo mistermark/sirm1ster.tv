@@ -38,7 +38,7 @@ days:
     times:
       start: "9:30 PM"
       end: "1:00 AM"
-    content: "botw"
+    content: "smashbros"
   - day: Sunday
     streaming: false
     times:
