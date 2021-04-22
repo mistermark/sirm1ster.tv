@@ -4,7 +4,7 @@ daterange:
   last: 11/04
 days:
   - day: Monday
-    streaming: false
+    streaming: true
     times:
       start: "9:30 AM"
       end: "4:00 PM"
