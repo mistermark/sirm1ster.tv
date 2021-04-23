@@ -28,7 +28,7 @@ days:
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Friday
-    streaming: true
+    streaming: false
     times:
       start: "9:30 AM"
       end: "4:00 PM"
