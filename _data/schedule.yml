@@ -1,7 +1,7 @@
 footnote: "All times above are in CET (Central European Time)"
 daterange:
-  first: 02/05
-  last: 09/05
+  first: 17/05
+  last: 23/05
 days:
   - day: Monday
     streaming: true
@@ -28,11 +28,11 @@ days:
       end: "4:00 PM"
     content: "asmr-botw"
   - day: Friday
-    streaming: false
+    streaming: true
     times:
-      start: "9:30 AM"
-      end: "4:00 PM"
-    content: "asmr-botw"
+      start: "9:30 PM"
+      end: "1:00 AM"
+    content: "botw"
   - day: Saturday
     streaming: true
     times:
