@@ -84,6 +84,7 @@ $drop-shadow-stack-8: drop-shadow(1px 1px 0 $drop-shadow-color)
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding-top: 2rem;
 
     h1 {
       text-shadow: $text-shadow-stack-4;
@@ -142,5 +143,17 @@ $drop-shadow-stack-8: drop-shadow(1px 1px 0 $drop-shadow-color)
   }
   .no-stream .day-content img {
     height: 36px;
+  }
+}
+
+.ruleset {
+  padding: 2rem 0;
+
+  .race-logo {
+    shape-outside: url('/assets/images/raceofthewild-logo.png');
+    shape-image-threshold: 0.0;
+    shape-margin: 2%;
+    float: right;
+    margin: 0 2rem 0 0;
   }
 }
