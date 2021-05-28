@@ -38,7 +38,7 @@ days:
     times:
       start: "9:00 PM"
       end: "3:00 AM"
-    content: "botw"
+    content: "race-of-the-wild"
   - day: Sunday
     streaming: false
     times:
