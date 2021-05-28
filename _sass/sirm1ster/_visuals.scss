@@ -86,6 +86,10 @@ $drop-shadow-stack-8: drop-shadow(1px 1px 0 $drop-shadow-color)
     justify-content: space-between;
     padding-top: 2rem;
 
+    &.race-header {
+      justify-content: center;
+    }
+
     h1 {
       text-shadow: $text-shadow-stack-4;
       margin-bottom: 0;
