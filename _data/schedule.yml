@@ -36,7 +36,7 @@ days:
   - day: Saturday
     streaming: true
     times:
-      start: "9:00 PM"
+      start: "9:30 PM"
       end: "1:00 AM"
     content: "smashbros"
   - day: Sunday
