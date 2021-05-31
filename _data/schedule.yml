@@ -37,8 +37,8 @@ days:
     streaming: true
     times:
       start: "9:00 PM"
-      end: "3:00 AM"
-    content: "race-of-the-wild"
+      end: "1:00 AM"
+    content: "smashbros"
   - day: Sunday
     streaming: false
     times:
