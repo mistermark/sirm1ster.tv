@@ -4,8 +4,17 @@
 .page-layout {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 40px;
-  grid-template-areas: "main foot";
+  grid-template-columns: 1fr;
+  grid-template-areas: "main" "foot";
+  grid-template-rows: 1fr 40px;
+
+  @media only screen and (min-width: 420px) {
+    & {
+      grid-template-columns: 1fr 40px;
+      grid-template-areas: "main foot";
+      grid-template-rows: 1fr;
+    }
+  }
 }
 .site-footer {
   grid-area: foot;
