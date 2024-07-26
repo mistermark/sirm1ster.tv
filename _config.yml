@@ -23,7 +23,7 @@ email: thesir@sirm1ster.tv
 description: >- # this means to ignore newlines until "baseurl:"
   A Dutch Twitch Affiliate part-time streamer who's main concern is to play games in style and creating a warm and welcoming, inclusive community
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sirm1ster.tv" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sirm1ster.github.io/sirm1ster.tv" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: sirM1ster
 twitch_username: sirm1stertv
