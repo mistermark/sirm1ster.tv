@@ -17,7 +17,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  background: url('/assets/pattern-blue.png') top center repeat;
+  background: url('pattern-blue.png') top center repeat;
 
   display: flex;
   min-height: 100vh;
